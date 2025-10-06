@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUJ Mates - Download for Android</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #00875f;
+            --light-gray: #f0f2f5;
+            --dark-gray: #5f6368;
+            --text-color: #202124;
+            --white: #ffffff;
+            --border-color: #e0e0e0;
+            --soon-bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .app-store-container {
+            background-color: var(--white);
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            gap: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+
+        .app-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-info h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .app-info .tagline {
+            font-size: 18px;
+            color: var(--primary-green);
+            font-weight: 500;
+            margin: 4px 0 0;
+        }
+
+        .main-content {
+            padding: 24px;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-decoration: none;
+            padding: 14px 40px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .download-button:hover {
+            background-color: #006d4c;
+        }
+
+        .app-meta {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--dark-gray);
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .about-text {
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout for clarity */
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .coming-soon .feature-card {
+             background-color: var(--soon-bg-color);
+             opacity: 0.7;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+        }
+
+        .feature-text h3 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: var(--dark-gray);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: var(--light-gray);
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: var(--dark-gray);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 0;
+            }
+            .app-store-container {
+                border-radius: 0;
+            }
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .app-info h1 {
+                font-size: 24px;
+            }
+            .app-info .tagline {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-store-container">
+        <header class="header">
+            <img src="logo main.png" alt="MUJ Mates App Logo" class="app-logo">
+            <div class="app-info">
+                <h1>MUJ Mates</h1>
+                <p class="tagline">Your College Companion</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="download-section">
+                <a href="https://drive.google.com/file/d/1hudrVyQS8AuFKL9XZdFG0HW6gAUVcGVf/view?usp=sharing%20target=" class="download-button">Download v1.0</a>
+                <p class="app-meta">Version 1.0.0 | Last updated: Oct 06, 2025</p>
+            </section>
+
+            <section class="section">
+                <h2>Initial Lunch</h2>
+                <p class="about-text">
+                    This is the foundational release of MUJ Mates! We've focused on the core essentials: a secure login system, personalized user profiles, and the most requested feature—your complete class schedule with timely notifications.
+                </p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔐</div>
+                        <div class="feature-text">
+                            <h3>Secure Login & Profiles</h3>
+                            <p>Easy registration, verification, and a personal profile to manage your information.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <div class="feature-text">
+                            <h3>Class Schedules with Links</h3>
+                            <p>Get your class details with meeting links, plus push notifications before 30 min of every class starts.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section class="section coming-soon">
+                <h2>🚀 Coming Soon</h2>
+                <p class="about-text">We're hard at work on the next set of features to make MUJ Mates even more powerful. Here's what's next:</p>
+                <div class="features-grid">
+                     <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <div class="feature-text">
+                            <h3>Discussions & Group Chat</h3>
+                            <p>A space where everyone can talk, share updates, and stay connected.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❓</div>
+                        <div class="feature-text">
+                            <h3>Q&A Section for Queries</h3>
+                            <p>Ask doubts and get answers from faculty or peers in a dedicated section.</p>
+                        </div>
+                    </div>
+                     <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <div class="feature-text">
+                            <h3>AI-Based Practice Quizzes</h3>
+                            <p>Auto-generated quizzes to help you practice for your exams, personalized for each subject.</p>
+                        </div>
+                    </div>
+                     <div class="feature-card">
+                        <div class="feature-icon">📄</div>
+                        <div class="feature-text">
+                            <h3>AI Question Paper Generation</h3>
+                            <p>Create sample question papers to better prepare for your examinations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            &copy; 2025 MUJ Mates - Developed by Uvesh Mansuri for MCA Students of MUJ.
+        </footer>
+    </div>
+
+</body>
+</html>

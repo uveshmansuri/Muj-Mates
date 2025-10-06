@@ -1,0 +1,10 @@
+<rss version="1.0">
+  <channel>
+    <title>App Updates</title>
+    <item>
+      <title>Version 1.0.0</title>
+      <sparkle:version>1.0.0</sparkle:version>
+      <enclosure url="https://drive.google.com/file/d/1hudrVyQS8AuFKL9XZdFG0HW6gAUVcGVf/view?usp=sharing%20target=" sparkle:os="android"/>
+    </item>
+  </channel>
+</rss>
