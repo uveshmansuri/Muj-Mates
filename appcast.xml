@@ -1,10 +1,12 @@
-<rss version="1.0">
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>App Updates</title>
     <item>
       <title>Version 1.0.0</title>
       <sparkle:version>1.0.0</sparkle:version>
-      <enclosure url="https://drive.google.com/file/d/1hudrVyQS8AuFKL9XZdFG0HW6gAUVcGVf/view?usp=sharing%20target=" sparkle:os="android"/>
+      <enclosure
+        url="https://drive.google.com/uc?export=download&id=1hudrVyQS8AuFKL9XZdFG0HW6gAUVcGVf"
+        sparkle:os="android" />
     </item>
   </channel>
 </rss>
