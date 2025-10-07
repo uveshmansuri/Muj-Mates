@@ -1,0 +1,262 @@
+:root {
+    --primary-green: #00875f;
+    --light-gray: #f0f2f5;
+    --dark-gray: #5f6368;
+    --text-color: #202124;
+    --white: #ffffff;
+    --border-color: #e0e0e0;
+    --soon-bg-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app-store-container {
+    background-color: var(--white);
+    max-width: 900px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.app-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+.app-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-info h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.app-info .tagline {
+    font-size: 18px;
+    color: var(--primary-green);
+    font-weight: 500;
+    margin: 4px 0 0;
+}
+
+/* Main */
+.main-content {
+    padding: 24px;
+}
+
+/* Download Section */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.download-button:hover {
+    background-color: #006d4c;
+}
+
+.app-meta {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+/* Sections */
+.section {
+    margin-bottom: 32px;
+}
+
+.section h2 {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.about-text {
+    line-height: 1.6;
+    color: var(--dark-gray);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.coming-soon .feature-card {
+    background-color: var(--soon-bg-color);
+    opacity: 0.7;
+}
+
+.feature-icon {
+    font-size: 24px;
+}
+
+.feature-text h3 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Instructions */
+.instructions {
+    background-color: var(--soon-bg-color);
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.instructions p {
+    margin: 6px 0;
+}
+
+/* Horizontal Scroll Screenshots */
+.screenshots-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+.screenshots-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshots-scroll::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 8px;
+}
+
+.screenshot-card {
+    flex: 0 0 auto;
+    width: 180px;
+}
+
+.screenshot-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.screenshot-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+    color: var(--dark-gray);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .app-store-container {
+        border-radius: 0;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .app-info h1 {
+        font-size: 24px;
+    }
+    .app-info .tagline {
+        font-size: 16px;
+    }
+}
+
+
+.feedback-section {
+    text-align: center;
+    background-color: var(--soon-bg-color);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.feedback-box {
+    margin-top: 16px;
+}
+
+.feedback-button {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.feedback-button:hover {
+    background-color: #006d4c;
+}
